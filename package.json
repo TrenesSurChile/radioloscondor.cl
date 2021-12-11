@@ -1,0 +1,57 @@
+{
+  "name": "mybot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "node server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.6.0",
+    "@top-gg/sdk": "^3.1.2",
+    "@types/yt-search": "^2.3.2",
+    "avconv": "^3.1.0",
+    "discord.js": "^12.5.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fastify": "^3.14.1",
+    "fastify-formbody": "^5.0.0",
+    "fastify-static": "^4.0.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.4.0",
+    "fss": "^1.0.0",
+    "general-search-engine": "^1.4.1",
+    "get-youtube-id": "^1.0.1",
+    "google": "^2.1.0",
+    "handlebars": "^4.7.7",
+    "http": "^0.0.0",
+    "opusscript": "^0.0.8",
+    "point-of-view": "^4.14.0",
+    "request": "^2.88.2",
+    "request-progress": "^3.0.0",
+    "search": "^1.0.0",
+    "serp": "^2.2.1",
+    "shoutcastinfo": "^1.0.8",
+    "spotify": "^0.3.0",
+    "spotify-url-info": "^2.2.3",
+    "stream-title": "^1.0.7",
+    "updated-youtube-info": "^1.4.7",
+    "youtube-info": "^1.3.2",
+    "youtube-search": "^1.1.6",
+    "yt-search": "^2.10.1",
+    "ytdl-core": "^4.9.1"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
