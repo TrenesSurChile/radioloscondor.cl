@@ -298,7 +298,7 @@ client.on('message', message => {
 }
 });
    
-client.login("ODIzOTI3Njk0MTc2NjgyMDE0.YFn8dg.wWfhWZLyG6Uf0whzYO9GcEAWmas");
+client.login("token");
 
 client.on("error", (e) => console.error(e));
 client.on("warn", (e) => console.warn(e));
