@@ -1,4 +1,3 @@
-# rcondorv345
-radioloscondor.cl
+# radioloscondor.cl
 Bot Creado Por TrenesSur.Cl
 Copyright radioloscondor.cl 2021
