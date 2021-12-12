@@ -35,7 +35,7 @@ client.once("ready", () => {
 
 const Topgg = require("@top-gg/sdk");
 
-const webhook = new Topgg.Webhook("4590267");
+const webhook = new Topgg.Webhook("id");
 
 app.post("/dblwebhook", webhook.listener(vote => {
   // vote will be your vote object, e.g
