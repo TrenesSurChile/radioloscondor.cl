@@ -13,7 +13,7 @@ require('dotenv').config();
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = 'rd!';
+const prefix = 's!';
 const fs = require('fs');
 client.commands = new Discord.Collection();
 const CommandFiles = fs.readdirSync("./commands/").filter(file => file.endsWith('.js'));
@@ -25,32 +25,13 @@ for (const file of CommandFiles) {
 client.once("ready", () => {
   console.log(`Estoy listo, conectado en ${client.guilds.cache.size} servidores`);
   client.user.setPresence({
-      status: "idle",
+    status: "dnd",
       activity: {
-         name: `${client.guilds.cache.size} servidores | rd!help`,
+         name: `sKD clan | s!help`,
          type: "WATCHING",
       }
    });
 });
-
-const Topgg = require("@top-gg/sdk");
-
-const webhook = new Topgg.Webhook("id");
-
-app.post("/dblwebhook", webhook.listener(vote => {
-  // vote will be your vote object, e.g
-  console.log(vote.user) // 395526710101278721 < user who voted\
-  let channel = client.channels.cache.get("905088452708671518")
-if(!channel)return console.log("channel was not found")
-  channel.send({embed: {
-    color: 0099,
-    description: (`**Gracias Por Apoyarnos!**
-    <@${vote.user}> A Votado En Top.gg :RadioLosCondorCL:
-    **URL:** https://top.gg/bot/823927694176682014/vote`)}});
-}));
-
-let port2 = process.env.PORT || 80;
-app.listen(port2);
 
 client.on('message', message => {
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
@@ -295,10 +276,9 @@ client.on('message', message => {
     client.commands.get('play23').execute(message, args);
   } else if (command === 'l') {
     client.commands.get('voiceleave').execute(message, args);
-}
-});
-   
-client.login("token");
+                                              }});
+
+client.login("OTIyMjc4NTgzNDU4NzU0NTcw.Yb_I3Q.cc6z1OSSllOnWPPy-SWi9aXDusk")
 
 client.on("error", (e) => console.error(e));
 client.on("warn", (e) => console.warn(e));
